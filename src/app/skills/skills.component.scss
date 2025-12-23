@@ -1,0 +1,63 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #56876D;
+    font-family: "LXGW Marker Gothic";
+    font-size: 12pt;
+    padding: 0px 50px 0px 50px;
+    margin-top: 20px;
+
+    h4{
+
+        .emojiText{
+            font-family: EmojiFont;
+            font-size: 20pt;
+        }
+    }
+
+    div {
+        display: flex;
+        gap: 10px;
+        width: 600px;
+        flex-wrap: wrap;
+
+        div {
+            flex-wrap: nowrap;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            color: #56876D;
+            font-family: "LXGW Marker Gothic";
+            font-size: 12pt;
+            background-color: transparent;
+            border-radius: 8px;
+            border: #56876D 1px solid;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 18pt;
+            max-width: calc((100% - 20px) / 3);
+
+            img {
+                height: 50px;
+            }
+
+            p {
+                margin: 0px;
+                text-align: center;
+                font-size: 14pt;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        padding: 0 3vw;
+        div {
+            width: 100vw;
+            max-width: 600px;
+            justify-content: center;
+        }
+    }
+}

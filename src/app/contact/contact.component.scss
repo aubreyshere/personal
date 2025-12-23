@@ -1,0 +1,103 @@
+:host {
+    font-family: "LXGW Marker Gothic";
+    width: 100vw;
+
+    .contact-container {
+        width: 100%;
+        background-color: #56876D;
+        color: white;
+        height: 150px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                height: 90px;
+
+                p {
+                    position: relative;
+                    font-size: 21pt;
+                    left: 100px;
+                    cursor: grab;
+                }
+
+                .message {
+                    display: flex;
+                    position: relative;
+                    left: 200px;
+                    color:#56876D;
+                    background-color: white;
+                    height: 40px;
+                    width: 130px;
+                    border-radius: 12px;
+                    align-items: center;
+                    justify-content: center;
+                    top: -10px;
+
+                    p {
+                        border-radius: 10px;
+                        border: 1px dashed #56876D;
+                        padding: 7px 12px 7px 12px;
+                        font-size: 12pt;
+                        left: 0px;
+                    }
+                }
+            }
+
+            .contact-links {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                right: 25vw;
+                color: white;
+                top: 20px;
+
+                div {
+                    display: flex;
+                    height: 25px;
+
+                    span {
+                        position: relative;
+                        display: block;
+                        top:7px;
+                        left: -5px;
+                        border-radius: 50%;
+                        height:5px;
+                        width:5px;
+                        border: white solid 1px;
+                    }
+
+                    a {
+                        font-size: 12pt;
+                        text-decoration-line: white;
+                        color: white;
+                    }
+
+                    a:visited {
+                        color: white;
+                    }
+                    
+                    svg {
+                        transform: scale(0.7);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .last-updated {
+        margin: 0;
+        font-size: 12pt;
+        align-self: flex-end;
+    }
+
+}

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0px;
+    scrollbar-width: none;        
+    -ms-overflow-style: none;
+    overflow-x: hidden; 
+}
+
+body::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}

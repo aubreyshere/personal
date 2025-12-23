@@ -1,0 +1,28 @@
+<h3 id="second">═ Skills</h3>
+<h4>Frontend <span class='emojiText'>RR</span></h4>
+<div>
+    @for (skill of frontendSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" [alt]="skill.language"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>
+<h4>Backend <span class='emojiText'>RR</span></h4>
+<div>
+    @for (skill of backendSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" [alt]="skill.language"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>
+<h4>Databases <span class='emojiText'>RR</span></h4>
+<div>
+    @for (skill of databaseSkills(); track skill.language) {
+    <div>
+        <img [src]="skill.image" [alt]="skill.language"/>
+        <p>{{ skill.language }}</p>
+    </div>
+    }
+</div>

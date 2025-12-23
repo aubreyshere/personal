@@ -1,0 +1,25 @@
+:host {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+
+    .flower {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #flower0 {
+        left: calc( 50vw - 370px);
+        top: 340px;
+        height: 80px;
+
+    }
+    @keyframes spin {
+        
+    }
+}

@@ -1,0 +1,36 @@
+:host {
+
+    nav {
+        padding: 40px;
+        display: flex;
+        gap: 1vw;
+
+        button {
+            border-radius: 20px;
+            border: #56876D 1px solid;
+            padding: 12px 9px 12px 9px;
+            background-color: transparent;
+            color: #56876D;
+            font-family: "LXGW Marker Gothic";
+            font-size: 12pt;
+            cursor: grab;
+        }
+
+        .active {
+            background-color: #b1e1af51;
+        }
+
+        button:hover {
+            background-color: #b1e1af51;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        nav {
+            padding: 40px 3vw;
+            gap: 2vw;
+        }
+
+    }
+}

@@ -1,0 +1,3 @@
+@for (flower of flowers(); let id = $index; track flower) {
+    <img class="flower" [id]="'flower' + id" [src]="flower.image" [alt]="flower.image" />
+}
