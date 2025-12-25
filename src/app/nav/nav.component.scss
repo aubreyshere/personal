@@ -1,9 +1,18 @@
-:host {
+@use '@angular/material' as mat;
 
+@include mat.sidenav-overrides((
+    container-background-color: orange,
+    container-text-color: red,
+));
+.sidenav-container {
     nav {
         padding: 40px;
         display: flex;
-        gap: 1vw;
+        
+        .desktopNav {
+          gap: 1vw;
+          display: flex;
+        }
 
         button {
             border-radius: 20px;
@@ -23,14 +32,31 @@
         button:hover {
             background-color: #b1e1af51;
         }
-    }
 
-    @media (max-width: 800px) {
-
-        nav {
-            padding: 40px 3vw;
-            gap: 2vw;
+        .menu-btn {
+          display: none;
+          align-self: flex-end;
         }
 
+        .mobile-sidenav {
+          display: flex;
+        }
+
+      @media (max-width: 550px) {
+        padding: 20px 20px 0 0;
+
+        button {
+          margin-left: auto;
+          border: none;
+        }
+
+        .menu-btn {
+          display: inline-flex;
+        }
+
+        .desktopNav {
+          display: none;
+        }
+      }
     }
 }

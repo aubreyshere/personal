@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 16px;
+        box-sizing:border-box;
 
         .contact-row {
             display: flex;
@@ -58,7 +59,7 @@
                 position: relative;
                 right: 25vw;
                 color: white;
-                top: 20px;
+                top: 15px;
 
                 div {
                     display: flex;
@@ -93,11 +94,52 @@
         }
     }
 
-
     .last-updated {
         margin: 0;
         font-size: 12pt;
         align-self: flex-end;
     }
 
+    @media (max-width: 800px) {
+        .contact-container {
+            .contact-row {
+                div {
+                    p {
+                        left: 0;
+                        font-size: 18pt;
+                    }
+
+                    .message {
+                        left: 0;
+                        font-size: 18pt;
+                        margin-top: 5px;
+                    }
+                }
+
+                .contact-links {
+                    right: 5vw;
+                }
+            }
+        }
+        
+    }
+
+        @media (max-width: 500px) {
+        .contact-container {
+            .contact-row {
+                div {
+                    p {
+                        left: 0;
+                        font-size: 12pt;
+                    }
+
+                    .message {
+                        left: 0;
+                        font-size: 12pt;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
 }

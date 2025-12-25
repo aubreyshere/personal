@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
 
 export class ContactComponent {
   showMessage = false;
-
   async copyEmail(): Promise<void> {
     try {
       const email = 'aubreyh715@email.com'; 
@@ -24,5 +23,4 @@ export class ContactComponent {
       console.error('Failed to copy email: ', err);
     }
   }
-
 }

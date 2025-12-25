@@ -1,14 +1,29 @@
 <h3 id="first">═ Selected projects</h3>
 @for (project of selectedProjects(); track project.title) {
-  <button
-    (mouseenter)="hovered = project.title"
-    (mouseleave)="hovered = null"
-    (click)="goToProject(project.link)"
-    [ngStyle]="{
-      'background-color': hovered === project.title ? project.color : 'transparent'
-    }"
-  >
-    <p>{{ project.year }}</p>
-    {{ project.title }}
-  </button>
+  <div>
+    <button
+      (mouseenter)="hovered = project.link"
+      (mouseleave)="hovered = null"
+      (click)="goToProject(project.link)"
+      [ngStyle]="{
+        'background-color': hovered === project.link ? project.color : 'transparent'
+      }"
+    >
+      <p>{{ project.year }}</p>
+      {{ project.title }}
+    </button>
+    @if (project.liveProject) {
+      <button
+        (mouseenter)="hovered = project.liveProject"
+        (mouseleave)="hovered = null"
+        (click)="goToProject(project.liveProject)"
+        [ngStyle]="{
+          'background-color': hovered === project.liveProject ? project.color : 'transparent'
+        }"
+        class="liveWebsite"
+      >
+      <mat-icon>open_in_new</mat-icon>
+    </button>
+    }
+  </div>
 }
