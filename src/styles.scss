@@ -1,12 +1,14 @@
 body, html {
-    margin: 0px;
-    scrollbar-width: none;        
-    -ms-overflow-style: none;
-    overflow-x: hidden; 
+  --mat-sidenav-content-background-color: transparent;
+  --mat-sidenav-container-background-color: #56876D;
+  margin: 0px;
+  scrollbar-width: none;        
+  -ms-overflow-style: none;
+  overflow-x: hidden; 
 }
 
 body::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+  display: none;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

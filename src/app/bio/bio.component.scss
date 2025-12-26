@@ -1,5 +1,4 @@
 :host {
-    position: relative;
     color: #56876D;
     display: flex;
     flex-direction: column;
@@ -10,14 +9,15 @@
     h1 {
         font-family: "Moirai One";
         font-size: 110pt;
-        margin: 0px;
+        box-sizing: border-box;
+        line-height: 1.2em;
     }
 
     p {
         font-family: "LXGW Marker Gothic";
         font-size: 15pt;
         font-weight: bold;
-        margin: 0px;
+        margin: 0;
     }
 
     .bottom {

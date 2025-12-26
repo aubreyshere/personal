@@ -8,17 +8,16 @@ import { ContactComponent } from './contact/contact.component';
 import { FlowersComponent } from './flowers/flowers.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, 
-    BioComponent, 
-    ProjectsComponent,
-    NavComponent, 
-    SkillsComponent, 
-    ContactComponent, 
-    FlowersComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [RouterOutlet,
+        BioComponent,
+        ProjectsComponent,
+        NavComponent,
+        SkillsComponent,
+        ContactComponent,
+        FlowersComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'boring';

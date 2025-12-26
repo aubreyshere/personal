@@ -5,11 +5,10 @@ export interface flower {
 }
 
 @Component({
-  selector: 'app-flowers',
-  standalone: true,
-  imports: [],
-  templateUrl: './flowers.component.html',
-  styleUrl: './flowers.component.scss'
+    selector: 'app-flowers',
+    imports: [],
+    templateUrl: './flowers.component.html',
+    styleUrl: './flowers.component.scss'
 })
 export class FlowersComponent {
   

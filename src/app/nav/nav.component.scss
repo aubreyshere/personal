@@ -1,62 +1,51 @@
-@use '@angular/material' as mat;
+nav {
+  padding: 40px;
+  display: flex;
+  
+  
+  .desktopNav {
+    gap: 1vw;
+    display: flex;
+  }
 
-@include mat.sidenav-overrides((
-    container-background-color: orange,
-    container-text-color: red,
-));
-.sidenav-container {
-    nav {
-        padding: 40px;
-        display: flex;
-        
-        .desktopNav {
-          gap: 1vw;
-          display: flex;
-        }
+  button {
+    border-radius: 20px;
+    border: #56876D 1px solid;
+    padding: 12px 9px 12px 9px;
+    background-color: transparent;
+    color: #56876D;
+    font-family: "LXGW Marker Gothic";
+    font-size: 12pt;
+    cursor: grab;
+  }
 
-        button {
-            border-radius: 20px;
-            border: #56876D 1px solid;
-            padding: 12px 9px 12px 9px;
-            background-color: transparent;
-            color: #56876D;
-            font-family: "LXGW Marker Gothic";
-            font-size: 12pt;
-            cursor: grab;
-        }
+  .active {
+      background-color: #b1e1af51;
+  }
 
-        .active {
-            background-color: #b1e1af51;
-        }
+  button:hover {
+      background-color: #b1e1af51;
+  }
 
-        button:hover {
-            background-color: #b1e1af51;
-        }
+  .menu-btn {
+    display: none;
+    align-self: flex-end;
+  }
 
-        .menu-btn {
-          display: none;
-          align-self: flex-end;
-        }
+  @media (max-width: 550px) {
+    padding: 20px 20px 0 0;
 
-        .mobile-sidenav {
-          display: flex;
-        }
-
-      @media (max-width: 550px) {
-        padding: 20px 20px 0 0;
-
-        button {
-          margin-left: auto;
-          border: none;
-        }
-
-        .menu-btn {
-          display: inline-flex;
-        }
-
-        .desktopNav {
-          display: none;
-        }
-      }
+    button {
+      margin-left: auto;
+      border: none;
     }
+
+    .menu-btn {
+      display: inline-flex;
+    }
+
+    .desktopNav {
+      display: none;
+    }
+  }
 }

@@ -11,14 +11,13 @@ export interface project {
 }
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatIconModule,
-  ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+    selector: 'app-projects',
+    imports: [
+        CommonModule,
+        MatIconModule,
+    ],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
 

@@ -1,38 +1,28 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #sidenav
-    mode="over"
-    position="end"
-    class="mobile-sidenav">
-    <button (click)="scroll('first'); sidenav.close()">
-      Projects
+  <nav>
+    <div class="desktopNav">
+      <button class="active">About</button>
+      <button (click)="scroll('first')">Projects</button>
+      <button (click)="scroll('second')">Skills</button>
+      <button (click)="scroll('third')">Contact</button>
+      <button (click)="openResume()">Resume</button>
+    </div>
+    <button
+      mat-icon-button
+      class="menu-btn"
+      aria-label="Open menu"
+      (click)="snav.toggle()"
+    >
+      <mat-icon>menu</mat-icon>
     </button>
-    <button (click)="scroll('second'); sidenav.close()">
-      Skills
-    </button>
-    <button (click)="scroll('third'); sidenav.close()">
-      Contact
-    </button>
-    <button (click)="openResume(); sidenav.close()">
-      Resume
-    </button>
+  </nav>
+  <mat-sidenav #snav fixedTopGap="56" position="end">
+    <mat-nav-list>
+      <button class="active">About</button>
+      <button (click)="scroll('first')">Projects</button>
+      <button (click)="scroll('second')">Skills</button>
+      <button (click)="scroll('third')">Contact</button>
+      <button (click)="openResume()">Resume</button>
+    </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <nav>
-      <div class="desktopNav">
-        <button class="active">About</button>
-        <button (click)="scroll('first')">Projects</button>
-        <button (click)="scroll('second')">Skills</button>
-        <button (click)="scroll('third')">Contact</button>
-        <button (click)="openResume()">Resume</button>
-      </div>
-      <button
-        mat-icon-button
-        class="menu-btn"
-        (click)="sidenav.open()"
-        aria-label="Open menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </nav>
-  </mat-sidenav-content>
 </mat-sidenav-container>
