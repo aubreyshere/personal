@@ -5,7 +5,7 @@
       (mouseenter)="hovered = project.link"
       (mouseleave)="hovered = null"
       (click)="goToProject(project.link)"
-      [ngStyle]="{
+      [style]="{
         'background-color': hovered === project.link ? project.color : 'transparent'
       }"
     >
@@ -17,7 +17,7 @@
         (mouseenter)="hovered = project.liveProject"
         (mouseleave)="hovered = null"
         (click)="goToProject(project.liveProject)"
-        [ngStyle]="{
+        [style]="{
           'background-color': hovered === project.liveProject ? project.color : 'transparent'
         }"
         class="liveWebsite"

@@ -2,7 +2,6 @@ nav {
   padding: 40px;
   display: flex;
   
-  
   .desktopNav {
     gap: 1vw;
     display: flex;
@@ -27,25 +26,12 @@ nav {
       background-color: #b1e1af51;
   }
 
-  .menu-btn {
-    display: none;
-    align-self: flex-end;
-  }
-
   @media (max-width: 550px) {
-    padding: 20px 20px 0 0;
-
-    button {
-      margin-left: auto;
-      border: none;
-    }
-
-    .menu-btn {
-      display: inline-flex;
-    }
+    padding: 20px;
 
     .desktopNav {
       display: none;
     }
   }
 }
+

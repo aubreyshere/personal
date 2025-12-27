@@ -1,5 +1,4 @@
 import { Component, Signal, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 
 export interface project {
@@ -11,18 +10,20 @@ export interface project {
 }
 
 @Component({
-    selector: 'app-projects',
-    imports: [
-        CommonModule,
-        MatIconModule,
-    ],
-    templateUrl: './projects.component.html',
-    styleUrl: './projects.component.scss'
+  selector: 'app-projects',
+  imports: [
+    MatIconModule,
+  ],
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.scss'
 })
+
 export class ProjectsComponent {
 
+  /** The link associated to the button the user is hovering. */
   hovered: string | null = null;
 
+  /** Projects created by Aubrey. */
   selectedProjects: Signal<project[]> = signal([
     {
       title: "MuHSiC",
@@ -51,6 +52,11 @@ export class ProjectsComponent {
     },
   ])
 
+  /**
+   * Opens a window to the input url for the user. 
+   * 
+   * @param {string} url - Website link.
+   */
   async goToProject(url: string): Promise<void> {
     window.open(url, '_blank');
   }

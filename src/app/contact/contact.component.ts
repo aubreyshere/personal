@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-contact',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss'
 })
 
 export class ContactComponent {
+  
+  /** Store the current state of visibility for the copy email text. */
   showMessage = false;
+
+  /** Copies email to the users clipboard. If failed, send a message to the console. */
   async copyEmail(): Promise<void> {
     try {
       const email = 'aubreyh715@email.com'; 

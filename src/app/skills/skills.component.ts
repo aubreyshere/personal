@@ -11,8 +11,10 @@ export interface skillSet {
     templateUrl: './skills.component.html',
     styleUrl: './skills.component.scss'
 })
+
 export class SkillsComponent {
 
+  /** Skills possessed by Aubrey related to frontend development. */
   frontendSkills: Signal<skillSet[]> = signal([
     {
       language: "HTML",
@@ -39,6 +41,8 @@ export class SkillsComponent {
       image: "assets/images/react0.png",
     },
   ])
+
+  /** Skills possessed by Aubrey related to backend development. */
   backendSkills: Signal<skillSet[]> = signal([ 
     {
       language: "Python",
@@ -54,6 +58,8 @@ export class SkillsComponent {
     },
     
   ])
+
+  /** Skills possessed by Aubrey related to databases. */
   databaseSkills: Signal<skillSet[]> = signal([
     {
       language: "Firebase",
@@ -64,5 +70,4 @@ export class SkillsComponent {
       image: "assets/images/sql0.png",
     },
   ])
-
 }

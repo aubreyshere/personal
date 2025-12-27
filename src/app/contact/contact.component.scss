@@ -7,7 +7,7 @@
         background-color: #56876D;
         color: white;
         height: 150px;
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -23,11 +23,16 @@
             div {
                 height: 90px;
 
-                p {
+                button {
+                    margin-top: 13px;
                     position: relative;
                     font-size: 21pt;
                     left: 100px;
                     cursor: grab;
+                    border: 0;
+                    background-color: transparent;
+                    color: white;
+                    font-family: "LXGW Marker Gothic";
                 }
 
                 .message {
@@ -41,7 +46,7 @@
                     border-radius: 12px;
                     align-items: center;
                     justify-content: center;
-                    top: -10px;
+                    top: 10px;
 
                     p {
                         border-radius: 10px;
@@ -124,7 +129,7 @@
         
     }
 
-        @media (max-width: 500px) {
+    @media (max-width: 500px) {
         .contact-container {
             .contact-row {
                 div {
