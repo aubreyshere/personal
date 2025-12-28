@@ -1,8 +1,4 @@
-import { Component, signal, Signal } from '@angular/core';
-
-export interface flower {
-  image: string,
-}
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-flowers',
@@ -12,8 +8,4 @@ export interface flower {
 })
 export class FlowersComponent {
   
-  flowers: Signal<flower[]> = signal([{
-    image: 'assets/flower-images/flower0.png',
-  }
-]);
 }

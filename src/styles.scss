@@ -1,14 +1,20 @@
 body, html {
-  --mat-sidenav-content-background-color: transparent;
-  --mat-sidenav-container-background-color: #56876D;
   margin: 0px;
   scrollbar-width: none;        
   -ms-overflow-style: none;
   overflow-x: hidden; 
+  background-image:
+    linear-gradient(to right, rgba(0,128,0,.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,128,0,.03) 1px, transparent 1px);
+
+  background-size: 48px 48px;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}

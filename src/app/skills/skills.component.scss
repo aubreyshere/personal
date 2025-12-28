@@ -7,6 +7,7 @@
     font-size: 12pt;
     padding: 0px 50px 0px 50px;
     margin-top: 20px;
+    overflow-x: hidden;
 
     h4{
 
@@ -51,10 +52,29 @@
                 font-size: 14pt;
             }
         }
+
+    }
+    .blob {
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        border-top-left-radius: 40vw;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 40vw;
+        border-bottom-right-radius: 0;
+        top: 120vh;
+        left: 80vw;
+        width: 20vw;
+        height: 40vw;
+        background: #56876D25;
     }
 
     @media (max-width: 800px) {
         padding: 0 3vw;
+
+        .blob {
+            display: none;
+        }
         div {
             width: 95vw;
             max-width: 600px;
