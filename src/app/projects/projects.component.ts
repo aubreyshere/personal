@@ -26,6 +26,13 @@ export class ProjectsComponent {
   /** Projects created by Aubrey. */
   selectedProjects: Signal<project[]> = signal([
     {
+      title: "Poligraph",
+      year: 2026,
+      color: "#BDBEA951",
+      link: "https://github.com/aubreyshere/gov_props",
+      liveProject: "https://poli-graph.vercel.app/",
+    },
+    {
       title: "MuHSiC",
       year: 2025,
       color: "#add8e651",
@@ -43,12 +50,6 @@ export class ProjectsComponent {
       year: 2025,
       color: "#D2AB9951",
       link: "https://github.com/vineeshah/IdealMeal"
-    },
-    {
-      title: "SlugHub",
-      year: 2025,
-      color: "#BDBEA951",
-      link: "https://github.com/aubreyshere/SlugHub",
     },
   ])
 
